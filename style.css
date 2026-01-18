@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #000;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(119, 119, 119);
+}
+
+.logo span {
+  color: blue;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: black;
+}
+
+nav a.active {
+  color: blue;
+}
+
+
+.page {
+  padding: 0 20px 80px 20px;
+  margin-top: 0;
+  max-width: 600px;
+  margin: 80px auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.page h1 {
+  text-align: left;
+  margin-left: 0;
+  margin-top: 0;
+  
+}
+
+.page .desc {
+  text-align: left;
+}
+
+.desc {
+  margin-top: 10px;
+  color: rgb(119, 119, 119);
+}
+
+
+.add-box {
+  margin-top: 40px;
+  display: flex;
+  gap: 15px;
+}
+
+.add-box input {
+  flex: 1;
+  height: 45px;
+  padding: 0 15px;
+  border-radius: 8px;
+  border: 1px solid rgb(224, 224, 224);
+  font-size: 14px;
+}
+
+.add-box button {
+  width: 130px;
+  background: blue;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+#todoList {
+  margin-top: 30px;
+}
+
+.todo-item {
+  background: rgb(245, 245, 245);
+  padding: 18px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.todo-item button {
+  width: 26px;
+  height: 26px;
+  border: 1px solid red;
+  background: transparent;
+  color: red;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.count {
+  margin-top: 25px;
+  text-align: left;
+  color: rgb(119, 119, 119);
+}
+
+.image img {
+  width: 280px;
+  margin: 50px auto;
+  display: block;
+}
+
+footer {
+  margin-top: 40px;
+  color: rgb(119, 119, 119);
+}
+
+footer a {
+  color: blue;
+  text-decoration: none;
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+@media (max-width: 600px) {
+  #addTodo {
+    position: fixed;    
+    bottom: 10px;          
+    left: 10px;            
+    right: 10px;
+    width: auto;        
+    height: 50px;       
+    z-index: 1000;      
+    border-radius: 5px;   
+    font-size: 16px;    
+  }
+  
+  .page {
+    padding: 10px 20px 70px 20px;      
+    padding-bottom: 80px; 
+    box-sizing: border-box; 
+  }
+}
+
+
+
+
+
