@@ -1,172 +1,205 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 body {
-  background: white;
-  color: black;
+    background: white;
+    color: rgba(51, 51, 51);
+    line-height: 1.6;
 }
 
-.navbar {
-  width: 100%;
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 60px;
-  border-bottom: 1px solid #eee;
+
+header.image {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    border-bottom: 1px solid white;
 }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-  color: rgb(119, 119, 119);
-}
 
-.logo span {
-  color: blue;
+header.image img {
+    height: 35px; 
+    width: auto;
+    margin: 0;
 }
 
 nav a {
-  margin-left: 25px;
-  text-decoration: none;
-  color: black;
+    margin-left: 25px;
+    text-decoration: none;
+    color: rgba(102, 102, 102);
+    font-size: 16px;
+    transition: 0.3s;
 }
 
 nav a.active {
-  color: blue;
+    color: blue;
+    font-weight: 500;
 }
 
-
 .page {
-  padding: 0 20px 80px 20px;
-  margin-top: 0;
-  max-width: 600px;
-  margin: 80px auto;
-  text-align: center;
-  box-sizing: border-box;
+    max-width: 650px;
+    margin: 60px auto;
+    padding: 0 20px;
 }
 
 .page h1 {
-  text-align: left;
-  margin-left: 0;
-  margin-top: 0;
-  
-}
-
-.page .desc {
-  text-align: left;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: black;
 }
 
 .desc {
-  margin-top: 10px;
-  color: rgb(119, 119, 119);
+    color: rgba(136, 136, 136);
+    font-size: 15px;
+    margin-bottom: 30px;
 }
 
-
 .add-box {
-  margin-top: 40px;
-  display: flex;
-  gap: 15px;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 40px;
 }
 
 .add-box input {
-  flex: 1;
-  height: 45px;
-  padding: 0 15px;
-  border-radius: 8px;
-  border: 1px solid rgb(224, 224, 224);
-  font-size: 14px;
+    flex: 1;
+    height: 48px;
+    padding: 0 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(224, 224, 224);
+    font-size: 15px;
+    outline: none;
+}
+
+.add-box input::placeholder {
+    color: rgba(204, 204, 204);
 }
 
 .add-box button {
-  width: 130px;
-  background: blue;
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 14px;
+    padding: 0 25px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.2s;
 }
 
+.add-box button:hover {
+    background: blue;
+}
 
 #todoList {
-  margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .todo-item {
-  background: rgb(245, 245, 245);
-  padding: 18px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
+    background: whitesmoke;
+    padding: 16px 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid transparent;
+    transition: 0.2s;
 }
 
+.todo-item:hover {
+    border-color: rgba(238, 238, 238);
+}
+
+
 .todo-item button {
-  width: 26px;
-  height: 26px;
-  border: 1px solid red;
-  background: transparent;
-  color: red;
-  border-radius: 6px;
-  cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: 1px solid red;
+    background: white;
+    color: red;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.todo-item button:hover {
+    background: red;
+    color: white;
 }
 
 
 .count {
-  margin-top: 25px;
-  text-align: left;
-  color: rgb(119, 119, 119);
+    margin-top: 30px;
+    font-size: 16px;
+    color: rgba(85, 85, 85);
 }
 
-.image img {
-  width: 280px;
-  margin: 50px auto;
-  display: block;
+#total {
+    font-weight: bold;
+    color: black;
+}
+
+
+#about .image img {
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    display: block;
 }
 
 footer {
-  margin-top: 40px;
-  color: rgb(119, 119, 119);
+    text-align: center;
+    margin-top: 60px;
+    color: rgba(153, 153, 153);
+    font-size: 14px;
 }
 
 footer a {
-  color: blue;
-  text-decoration: none;
+    color: blue;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 
 @media (max-width: 600px) {
-  #addTodo {
-    position: fixed;    
-    bottom: 10px;          
-    left: 10px;            
-    right: 10px;
-    width: auto;        
-    height: 50px;       
-    z-index: 1000;      
-    border-radius: 5px;   
-    font-size: 16px;    
-  }
-  
-  .page {
-    padding: 10px 20px 70px 20px;      
-    padding-bottom: 80px; 
-    box-sizing: border-box; 
-  }
+    header.image {
+        padding: 0 20px;
+    }
+    
+    .page h1 {
+        font-size: 28px;
+    }
+
+    .add-box button {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        height: 55px;
+        width: calc(100% - 40px);
+        z-index: 100;
+        box-shadow: 0 4px 15px rgba(0, 0, 255, 0.3);
+    }
+    
+    .page {
+        margin-top: 40px;
+        padding-bottom: 100px; 
+    }
 }
-
-
-
-
-
